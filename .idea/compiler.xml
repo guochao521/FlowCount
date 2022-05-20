@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="PhoneCount" />
         <module name="Hadoop" />
+        <module name="FlowCount" />
       </profile>
     </annotationProcessing>
   </component>
