@@ -44,7 +44,7 @@ load data local inpath "/data/hive/movies.dat" into table t_movie;
 load data local inpath "/data/hive/ratings.dat" into table t_rating;
 
 
--- 题目一：展示电影ID为2016这部电影各年龄段的平均影评分
+-- 题目一：展示电影ID为2116这部电影各年龄段的平均影评分
 select ur.age, avg(rt.rate)
 from t_user ur
     join (
