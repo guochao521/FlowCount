@@ -47,7 +47,7 @@
                     </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass>Spark.InvertedIndexRDD</mainClass>
+                            <mainClass>spark.InvertedIndexRDD</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
