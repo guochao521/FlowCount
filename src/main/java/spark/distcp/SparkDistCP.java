@@ -38,7 +38,7 @@ public class SparkDistCP {
         String targetRootPath = ""; // args[1]
 
         int maxCountCurrency = Integer.parseInt(args[2]);  // 设置并行度
-        boolean ignoreFailure = Boolean.parseBoolean(args[3]);
+        boolean ignoreFailure = Boolean.parseBoolean(args[3]); // 是否忽视文件拷贝错误
 
         JavaRDD<String> sourceFileListRDD = getSourceFileLists(sourceRootPath, targetRootPath, maxCountCurrency);
 
