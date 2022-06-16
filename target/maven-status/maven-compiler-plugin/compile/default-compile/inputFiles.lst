@@ -7,7 +7,9 @@ F:\GitHub\FlowCount\src\main\java\flowcount\FlowBean.java
 F:\GitHub\FlowCount\src\main\java\flowcount\PhoneCount.java
 F:\GitHub\FlowCount\src\main\java\flowcount\FlowMap.java
 F:\GitHub\FlowCount\src\main\java\flowcount\PhoneCountMapper.java
+F:\GitHub\FlowCount\src\main\java\utils\WordAccuracy.java
 F:\GitHub\FlowCount\src\main\java\hbase\api\HBaseConnection.java
 F:\GitHub\FlowCount\src\main\java\hive\HiveTest.java
 F:\GitHub\FlowCount\src\main\java\utils\Logger.java
 F:\GitHub\FlowCount\src\main\java\flowcount\FlowReducer.java
+F:\GitHub\FlowCount\src\main\java\spark\distcp\SparkDistCP.java
