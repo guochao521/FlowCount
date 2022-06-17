@@ -33,8 +33,9 @@ object TestDataFrame2 {
      */
     val df:DataFrame = sqlContext.createDataFrame(rowRDD, stuctType)
     df.createOrReplaceTempView("people")
-    sqlContext.sql("select* from people").show()
+    sqlContext.sql("select * from people").show()
 
+    val schema = new StructType().add("name", new StructType().add("firstname", StringType))
   }
 
 }
