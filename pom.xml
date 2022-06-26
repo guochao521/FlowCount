@@ -6,7 +6,7 @@
 
     <groupId>org.example</groupId>
     <artifactId>PhoneCount</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0</version>
 
     <build>
         <plugins>
@@ -78,6 +78,7 @@
         <maven.compiler.target>8</maven.compiler.target>
 
         <scala.version>2.12.15</scala.version>
+
         <scala.binary.version>2.12.15</scala.binary.version>
     </properties>
     <dependencies>
@@ -104,11 +105,6 @@
                     <groupId>com.thoughtworks.paranamer</groupId>
                     <artifactId>paranamer</artifactId>
                 </exclusion>
-
-<!--                <exclusion>-->
-<!--                    <groupId>org.codehaus.jackson</groupId>-->
-<!--                    <artifactId>jackson-core-asl</artifactId>-->
-<!--                </exclusion>-->
             </exclusions>
         </dependency>
 
@@ -152,11 +148,23 @@
             </exclusions>
         </dependency>
 
+<!--        <dependency>-->
+<!--            <groupId>org.apache.hadoop</groupId>-->
+<!--            <artifactId>hadoop-mapreduce-client-core</artifactId>-->
+<!--            <version>3.2.1</version>-->
+<!--            <exclusions>-->
+<!--                <exclusion>-->
+<!--                    <groupId>com.fasterxml.jackson.core</groupId>-->
+<!--                    <artifactId>*</artifactId>-->
+<!--                </exclusion>-->
+<!--            </exclusions>-->
+<!--        </dependency>-->
+
         <dependency>
             <groupId>org.apache.hadoop</groupId>
             <artifactId>hadoop-mapreduce-client-jobclient</artifactId>
             <version>3.2.1</version>
-            <scope>test</scope>
+<!--            <scope>test</scope>-->
             <exclusions>
                 <exclusion>
                     <groupId>com.fasterxml.jackson.core</groupId>
