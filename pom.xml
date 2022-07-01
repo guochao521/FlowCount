@@ -79,11 +79,7 @@
 
         <scala.version>2.12.15</scala.version>
         <scala.binary.version>2.12.15</scala.binary.version>
-        <spark.version>3.2.0</spark.version>
-        <hadoop.version>3.2.1</hadoop.version>
     </properties>
-
-
     <dependencies>
         <dependency>
             <groupId>org.apache.maven.plugins</groupId>
@@ -98,7 +94,7 @@
         <dependency>
             <groupId>org.apache.hadoop</groupId>
             <artifactId>hadoop-common</artifactId>
-            <version>${hadoop.version}</version>
+            <version>3.2.1</version>
             <exclusions>
                 <exclusion>
                     <groupId>com.fasterxml.jackson.core</groupId>
@@ -119,7 +115,7 @@
         <dependency>
             <groupId>org.apache.hadoop</groupId>
             <artifactId>hadoop-client</artifactId>
-            <version>${hadoop.version}</version>
+            <version>3.2.1</version>
             <exclusions>
                 <exclusion>
                     <groupId>com.fasterxml.jackson.core</groupId>
@@ -131,7 +127,7 @@
         <dependency>
             <groupId>org.apache.hadoop</groupId>
             <artifactId>hadoop-hdfs</artifactId>
-            <version>${hadoop.version}</version>
+            <version>3.2.1</version>
             <exclusions>
                 <exclusion>
                     <groupId>io.netty</groupId>
@@ -147,7 +143,7 @@
         <dependency>
             <groupId>org.apache.hadoop</groupId>
             <artifactId>hadoop-mapreduce-client-common</artifactId>
-            <version>${hadoop.version}</version>
+            <version>3.2.1</version>
             <exclusions>
                 <exclusion>
                     <groupId>com.fasterxml.jackson.core</groupId>
@@ -159,7 +155,7 @@
         <dependency>
             <groupId>org.apache.hadoop</groupId>
             <artifactId>hadoop-mapreduce-client-jobclient</artifactId>
-            <version>${hadoop.version}</version>
+            <version>3.2.1</version>
             <scope>test</scope>
             <exclusions>
                 <exclusion>
