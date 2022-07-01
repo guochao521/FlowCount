@@ -11,7 +11,7 @@ import java.util.List;
 public class WordAccuracy {
 
 //    public static void main(String[] args) throws IOException {
-    public static float  ComparedFile(String standardFile, String clientFile ) {
+    public static float ComparedFile(String standardFile, String clientFile ) {
 
         try{
             // 读取标准和对比文件内容
