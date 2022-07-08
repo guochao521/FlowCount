@@ -1,7 +1,7 @@
 package spark.udf
 
 import org.apache.spark.sql.SQLContext
-import org.apache.spark.sql.functions.udf
+import org.apache.spark.sql.functions.{col, udf}
 import org.apache.spark.{SparkConf, SparkContext}
 
 /**
@@ -43,7 +43,17 @@ object TestDataUDF {
     userDF.withColumn("name_len", strLen(col("name"))).withColumn("isAdult", udf_isAdult(col("age"))).show()
 
     //通过select添加列
-    userDF.select(col("*"), strLen(col("name")) as "name_len", udf_isAdult(col("age")) as "isAdult").show
+    userDF.select(col("age"), strLen(col("name")) as "name_len", udf_isAdult(col("age")) as "isAdult").show
+
+
+    // 使用UDAF
+    val ds = spark.read.json("C:\\Users\\wangguochao\\Desktop\\test\\test.json")
+    ds.show()
+
+    ds.createOrReplaceTempView("employees")
+    spark.udf.register("myAverage", MyAverageUDAF)
+    val result = spark.sql("SELECT myAverage(Amount) as average_salary FROM employees")
+    result.show()
 
   }
 
